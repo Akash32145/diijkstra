@@ -1,0 +1,41 @@
+
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #f0f0f0;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(20, 30px);
+  gap: 1px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.node {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.node.start {
+  background-color: green;
+}
+
+.node.end {
+  background-color: red;
+}
+
+.node.wall {
+  background-color: black;
+}
+
+.node.visited {
+  background-color: skyblue;
+}
+
+.node.path {
+  background-color: gold;
+}
